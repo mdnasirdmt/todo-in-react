@@ -3,6 +3,8 @@ import ToDo from "./components/ToDo";
 import ToDoList from "./components/ToDoList";
 
 function App() {
+
+
   const [addText, setAddText] = useState([] as any);
   let toDoList = (inputText) => {
     setAddText([...addText, inputText]);
@@ -15,6 +17,8 @@ function App() {
     newListTodo.splice(key, 1);
     setAddText([...newListTodo]);
   };
+
+   
 
   return (
     <>
